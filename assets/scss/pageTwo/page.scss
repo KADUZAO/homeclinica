@@ -1,0 +1,140 @@
+@import '../base';
+
+main {
+    .container {
+        .nuccis_estetica {
+            background: $color-primary;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+
+            display: flex;
+            justify-content: space-between;
+
+            .nucci_estetica {
+                width: 48%;
+            }
+
+            .nucci_estetica-left {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .nucci_estetica-rigth {
+                .subtitle {
+                    font-family: $font-avenirBlack;
+                }
+
+                .text {
+                    font-size: 1.45rem;
+                }
+            }
+        }
+
+        .container_points {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 100%;
+
+            .container_points-points {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1.75rem;
+
+                .title {
+                    margin-bottom: 2rem;
+                }
+
+                .container_points-point {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+
+                    .container_points-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $color-primary;
+                        padding: 0.5rem 1rem;
+                        border-radius: 1rem;
+
+                        &.botox {
+                            min-height: 80px;
+                        }
+
+                        &.depilacao {
+                            min-height: 90px;
+                        }
+
+                        &.massagem {
+                            min-height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box_cabelo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 100%;
+
+            .box_cabelo-points {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1.75rem;
+
+                .title {
+                    margin-bottom: 2rem;
+                }
+
+                .box_cabelo-point {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+
+                    .subtitle {
+                        font-family: $font-avenirBlack;
+                    }
+
+                    .box_cabelo-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $color-primary;
+                        padding: 0.5rem 1rem;
+                        border-radius: 1rem;
+                        min-height: 150px;
+
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 10rem;
+    .container {
+        .box-left {
+            width: 60%;
+            p.text {
+                font-family: $font-avenirBlack;
+            }
+        }
+
+        .title {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+}
